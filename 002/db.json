@@ -1,0 +1,34 @@
+{
+    "product":[
+        {
+            "id":1001,
+            "name":"Boat Airpode 131",
+            "price":28,
+            "In_Stock":true
+        },
+        {
+            "id":1002,
+            "name":"Boat Airpode 161",
+            "price":29,
+            "In_Stock":true
+        },
+        {
+            "id":1003,
+            "name":"Boat Airpode 181",
+            "price":30,
+           "In_Stock":false
+        },
+        {
+            "id":1004,
+            "name":"Boat Airpode 191",
+            "price":31,
+            "In_Stock":false
+        },
+        {
+            "id":1005,
+            "name":"Boat Airpode MaXX",
+            "price":40,
+            "In_Stock":false
+        }
+    ]
+}

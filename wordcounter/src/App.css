@@ -1,0 +1,112 @@
+
+App {
+  font-family: sans-serif, cursive;
+  text-align: center;
+  background-color: white; 
+  color: purple; 
+}
+
+
+.title {
+  align-items: center;
+  text-align: center;
+  margin: 50px;
+}
+
+.title > span {
+  color: purple; 
+  font-size: 31px;
+  font-weight: bold;
+}
+
+.title > p {
+  color: rgba(128, 0, 128, 0.7); 
+  font-size: 17px;
+}
+
+
+.textBox > * {
+  align-items: center;
+}
+
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#TA {
+  border: 4px solid rgba(128, 0, 128, 0.7); 
+  font-family: sans-serif, cursive;
+  color: purple; 
+  font-size: 17px;
+  height: 50vh;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, white, rgba(128, 0, 128, 0.3)); /* Subtle white to purple gradient */
+}
+
+@media (max-width: 768px) {
+  #TA {
+    font-size: 13px;
+    height: auto;
+    padding: 15px;
+  }
+}
+
+
+.Clear {
+  padding: 10px;
+  font-size: medium;
+  border: none;
+  width: 70px;
+  border-radius: 5px;
+  background-color: rgba(128, 0, 128, 0.8); 
+  color: white; 
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Clear:hover {
+  background-color: rgba(128, 0, 128, 1); 
+}
+
+
+.outputBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.outputBox > div {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgba(128, 0, 128, 0.6); 
+  color: white; 
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+input, textarea {
+  border: 2px solid rgba(128, 0, 128, 0.7); 
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: purple; 
+  background-color: white;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: rgba(128, 0, 128, 1); 
+  box-shadow: 0 0 5px rgba(128, 0, 128, 0.5); 
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/home/l1.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Farmer</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul class="topnav">
+          <li>
+            <a href="#">TRaf</a>
+          </li>
+          <li><a href="#1a">Rent Tractor</a></li>
+          <li><a href="#Ta">Rent Tools</a></li>
+          <li><a href="#3a">Find Labours</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul class="topnav">
+          <li>
+            <a href="#lang" id="language">
+              <i class="fa-solid fa-globe"></i> &nbsp; EN</a
+            >
+          </li>
+          <li>
+            <a href="#help">Help</a>
+          </li>
+  
+          <li>
+            <!-- <a href="#signup"> Sign up</a> -->
+
+            <button class="dropdown-toggle" id="signup-toggle">
+              <a href="#signup">Profile</a>
+            </button>
+
+            <ul class="dropdown-menu login-dropdown">
+              <li>
+                <a href="../login/login.html"
+                  >Settings <i class="fa-solid fa-gear"></i
+                ></a>
+              </li>
+              <li>
+                <a href="../login/login.html"
+                  >Connect <i class="fa-solid fa-code-fork"></i
+                ></a>
+              </li>
+              <li>
+                <a href="../login/login.html"
+                  >To-let <i class="fa-solid fa-utensils"></i
+                ></a>
+              </li>
+              <li>
+                <a href="../login/login.html"
+                  >Rent <i class="fa-solid fa-shop fa-3lg"></i
+                ></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <div class="hero-text">
+        <h3 style="font-family: uber-bold">Rent Anything with TRaf</h3>
+        <br />
+        <h5>Request to rent.</h5>
+        <br />
+        <form >
+          <div class="form-container">
+            <div class="src">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                data-baseweb="icon"
+              >
+                <title>search</title>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm5-2a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <!-- <input type="text" id="a1" placeholder="Enter location" /> -->
+              <div
+                class="autocomplete-container"
+                id="autocomplete-container"
+              ></div>
+
+              <svg
+                width="2em"
+                height="2em"
+                viewBox="0 0 24 24"
+                fill="none"
+                tabindex="0"
+                role="button"
+              >
+                <title>Navigate right up</title>
+                <path
+                  d="M10.5 13.5.5 11 21 3l-8 20.5-2.5-10Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+
+            <button type="button" href="location.js" class="uber-bold">Done</button>
+          </div>
+        </form>
+      </div>
+      <div class="hero-img">
+        <img src="../assets/images/home/tractor 2.jpg" width="100%" height="100%"  alt="The very first image" />
+      </div>
+    </section>
+    <main>
+      <section class="carman-img" id="1a">
+        <img
+          src="../assets/images/home/Vechical.jpg"
+          alt="The very second image"
+          width="558"
+          height="558"
+        />
+        <div class="carman-container" >
+          <h3 class="carman-text">Get when you want, make what you need</h3>
+          <h5>
+            Save money on your schedule with work. You
+            can use your own Tractor or choose a rental through TRaf.
+          </h5>
+          <div class="carman-buttons">
+            <a href="../list/list.html"><button class="black-button">View-Model</button></a>
+            <button class="underline-button">
+              Already have an account ? Sign in
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="carman-img | air-img"   id="Ta">
+        <div class="carman-container | air-text">
+          <h3 class="carman-text">
+            Get Required Tools 
+          </h3>
+          <h5>
+             Forget about Dead Investments
+          </h5>
+          <div class="carman-buttons">
+            <a href="../l2/l2.html"><button class="black-button">Get Tools</button></a>
+            <button class="underline-button">Check out our solutions</button>
+          </div>
+        </div>
+        <img
+          src="../assets/images/home/tools.jpg"
+          alt="The very third image"
+          style="width: 558px; height: 558px"
+        />
+      </section>
+
+      <section class="carman-img"  id="3a">
+        <img
+          src="../assets/images/home/Labor.jpg"
+          alt="The very fourth image"
+          style="width: 558px; height: 558px"
+        />
+        <div class="carman-container | city-container">
+          <h3 class="carman-text">Get Labours for Agriculture Needs</h3>
+          <h5>
+            Forget about Labours scarcity
+          </h5>
+          <div class="carman-buttons">
+            <a href='/l3/l3.html'><button class="black-button">Contact</button></a> 
+          </div>
+        </div>
+      </section>
+
+      <section id="apps">
+        <p>
+
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <a href="#">TRaf</a>
+      <br />
+      <a href="#" class="help-center">Visit Help Center</a>
+      <div class="lists">
+        <ul>
+          <li><a href="#">Network</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">New updates</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Rent Issue</a></li>
+          <li><a href="#">Damage Issue</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Memberships</a></li>
+          <li><a href="#">Availablity</a></li>
+          <li><a href="#">Accessibility and Inclusion</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Venues</a></li>
+          <li><a href="#">Farm</a></li>
+          <li><a href="#">Garden</a></li>
+          <li><a href="#">Fields</a></li>
+        </ul>
+      </div>
+      <div class="socials-wrapper">
+        <div class="socials">
+          <a href="https://www.facebook.com/uber/"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="meta">
+          <a href=""><i class="fa-solid fa-globe globe"></i> English</a>
+          <a href=""><i class="fa-solid fa-location-dot"></i> </a>
+        </div>
+      </div>
+
+      <div class="app-stores">
+        <a
+          href="https://play.google.com/store/search?q=uber&c=apps&hl=en_IN&gl=US"
+          ><img
+            alt="Get it on Google Play"
+            src="../assets/images/home/store.png"
+            style="width: 128px; height: 38px"
+        /></a>
+        <a href="https://apps.apple.com/in/app/uber-request-a-ride/id368677368"
+          ><img src="../assets/images/home/apple-store.svg" alt="Apple sucks"
+        /></a>
+      </div>
+
+      <div class="legal">
+        <div class="copyright">© 2024 Uber Technologies Inc.</div>
+        <div class="docs">
+          <a href="#">Privacy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="location.js"></script>
+  </body>
+</html>

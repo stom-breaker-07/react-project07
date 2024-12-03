@@ -1,0 +1,136 @@
+
+.ab{
+    text-align: center;
+    color: rgb(51, 71, 71);
+    font-family:sans-serif  cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.ab>form>input{
+   margin: 0 40%;
+   
+}
+body{
+    background-color: #E63946;
+}
+
+
+input{
+    width: 50px;
+}
+button{
+    width: 140px;
+    color: rgb(255, 255, 255);
+    background-color: #003049;
+}
+.b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    padding:  0 35px;
+    margin-bottom: 100px;
+
+}
+
+.wrp{
+    max-width: 1150px;
+    width: 100%;
+    position: relative;
+}
+.wrp i{
+    height: 50px;
+    width: 50px;
+    background: rgb(95, 88, 87);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgb(104, 82, 82);
+}
+
+.wrp i:first-child{
+    left: -50px;
+}
+.wrp i:last-child{
+    right: -50px;
+}
+
+.wrp .crl{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4) - 1px );
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+   scrollbar-width: 0;
+}
+
+.crl::-webkit-scrollbar{
+    display: none;
+}
+
+.crl :where(.card,.img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crl.dragging {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+}
+
+.crl.dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+
+.crl .card{
+    scroll-snap-align: start;
+    height: 280px;
+    list-style: none;
+    background-color: #F1FAEE;
+    cursor: pointer;
+    border-radius: 16px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card .img{
+    background: white;
+    width: 205px;
+    height: 175px;
+    border-radius: 30px
+
+
+}
+.card .img img{
+    width: 200px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 30px
+}
+
+@media screen and (max-width:900px){
+    .wrp .crl{
+        grid-auto-columns: calc((100% / 3) - 1px );  
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .wrp .crl{
+        grid-auto-columns:110%;
+    }
+}
